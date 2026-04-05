@@ -1,0 +1,328 @@
+---
+layout: default
+title: "Claude Code 101 — From Zero to Deployed with AI"
+---
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <h1>Learn Claude Code.<br>Deploy Real Infrastructure.</h1>
+    <p class="hero-subtitle">
+      A hands-on course for DevOps, SRE, QA, and developers.
+      Go from your first <code>claude</code> command to a live app on Kubernetes &mdash;
+      with AI as your co-pilot the entire way.
+    </p>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <span class="hero-stat-number">14</span>
+        <span class="hero-stat-label">Blocks</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-number">1</span>
+        <span class="hero-stat-label">Real App</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-number">1</span>
+        <span class="hero-stat-label">Live Deployment</span>
+      </div>
+    </div>
+    <a href="{{ '/course/' | relative_url }}" class="hero-cta">Start Learning &rarr;</a>
+  </div>
+</section>
+
+<!-- What You'll Build -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-header">
+      <h2>What You'll Build</h2>
+      <p>Not a toy demo. A real Next.js dashboard app, containerized, deployed to k3s on DigitalOcean via GitOps, accessible from anywhere on the internet.</p>
+    </div>
+    <div class="prereq-grid">
+      <div class="prereq-box" style="text-align: center;">
+        <h3>Before</h3>
+        <p>ai-coderrank: a coding AI models leaderboard.</p>
+        <p>Running locally. Light theme. No infrastructure.</p>
+        <code style="font-size: 0.85rem;">npm run dev &rarr; localhost:3000</code>
+      </div>
+      <div class="prereq-box" style="text-align: center;">
+        <h3>After</h3>
+        <p>Dark theme. Docker image. CI/CD pipeline. k3s cluster. ArgoCD GitOps. Public URL.</p>
+        <code style="font-size: 0.85rem;">https://your-domain.com &rarr; live on the internet</code>
+      </div>
+    </div>
+    <div class="fun-fact" style="margin-top: var(--space-xl);">
+      <p>Claude Code was used to build parts of Claude Code itself. In this course, you'll use Claude Code to deploy an app that ranks AI coding models &mdash; including Claude. It's AI all the way down.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Who This Is For -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Who This Is For</h2>
+      <p>If you work in tech and haven't tried Claude Code yet, this is your on-ramp.</p>
+    </div>
+    <div class="audience-grid">
+      <div class="audience-card">
+        <span class="audience-icon">&gt;_</span>
+        <h3>DevOps Engineers</h3>
+        <p>Automate infrastructure tasks, write IaC, debug pipelines, and manage deployments through conversation.</p>
+      </div>
+      <div class="audience-card">
+        <span class="audience-icon">&#9888;</span>
+        <h3>SRE</h3>
+        <p>Analyze logs, create runbooks, build monitoring skills, and set up automated health checks with Claude.</p>
+      </div>
+      <div class="audience-card">
+        <span class="audience-icon">&#10003;</span>
+        <h3>QA Engineers</h3>
+        <p>Generate tests, review code for edge cases, automate test workflows, and build quality gates with hooks.</p>
+      </div>
+      <div class="audience-card">
+        <span class="audience-icon">{ }</span>
+        <h3>Developers</h3>
+        <p>Ship features faster, get instant code reviews, manage git workflows, and understand unfamiliar codebases.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- What Claude Code Can Do (April 2026) -->
+<section class="section section--dark">
+  <div class="container">
+    <div class="section-header">
+      <h2>Why Claude Code in 2026</h2>
+      <p>Claude Code isn't just autocomplete. It's a full-session AI agent that reads your codebase, runs commands, edits files, manages git, and orchestrates multi-agent workflows. Here's what you'll master:</p>
+    </div>
+    <div class="blocks-grid">
+      <div class="block-card" style="background: rgba(250, 249, 245, 0.05); border-color: rgba(250, 249, 245, 0.1);">
+        <h3 style="color: var(--text-inverse);">Plans &amp; ADRs</h3>
+        <p style="color: rgba(250, 249, 245, 0.65);">Claude thinks before it acts. Enter plan mode, generate Architecture Decision Records, and create Mermaid diagrams &mdash; all from a conversation.</p>
+      </div>
+      <div class="block-card" style="background: rgba(250, 249, 245, 0.05); border-color: rgba(250, 249, 245, 0.1);">
+        <h3 style="color: var(--text-inverse);">Custom Skills</h3>
+        <p style="color: rgba(250, 249, 245, 0.65);">Package team workflows as reusable slash commands: <code>/review-k8s</code>, <code>/check-docker</code>, <code>/deploy</code>. Your playbook, Claude-powered.</p>
+      </div>
+      <div class="block-card" style="background: rgba(250, 249, 245, 0.05); border-color: rgba(250, 249, 245, 0.1);">
+        <h3 style="color: var(--text-inverse);">Hooks &amp; Automation</h3>
+        <p style="color: rgba(250, 249, 245, 0.65);">Auto-format on save, block destructive commands, notify on completion. Hooks run shell commands at every lifecycle point.</p>
+      </div>
+      <div class="block-card" style="background: rgba(250, 249, 245, 0.05); border-color: rgba(250, 249, 245, 0.1);">
+        <h3 style="color: var(--text-inverse);">MCP Servers</h3>
+        <p style="color: rgba(250, 249, 245, 0.65);">Connect Claude to GitHub, Slack, Linear, databases, and 50+ external tools via the Model Context Protocol.</p>
+      </div>
+      <div class="block-card" style="background: rgba(250, 249, 245, 0.05); border-color: rgba(250, 249, 245, 0.1);">
+        <h3 style="color: var(--text-inverse);">Sub-agents &amp; Teams</h3>
+        <p style="color: rgba(250, 249, 245, 0.65);">Spawn specialized AI workers for security review, K8s validation, or parallel research. Coordinate multi-agent teams on complex tasks.</p>
+      </div>
+      <div class="block-card" style="background: rgba(250, 249, 245, 0.05); border-color: rgba(250, 249, 245, 0.1);">
+        <h3 style="color: var(--text-inverse);">CI/CD &amp; GitHub Actions</h3>
+        <p style="color: rgba(250, 249, 245, 0.65);">Tag <code>@claude</code> in a PR for automated review. Create issues and let Claude implement them. Schedule recurring cloud tasks.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Course Blocks -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>The Course</h2>
+      <p>14 blocks. Each one builds on the last. By the end, you've deployed a real app and mastered Claude Code.</p>
+    </div>
+    <div class="blocks-grid">
+
+      <a href="{{ '/course/block-00-welcome/' | relative_url }}" class="block-card">
+        <span class="block-card-number">00</span>
+        <h3>Welcome &amp; Setup</h3>
+        <p>Install Claude Code, authenticate, fork the project, and have your first AI conversation.</p>
+        <div class="feature-badges">
+          <span class="feature-badge">install</span>
+          <span class="feature-badge">/help</span>
+        </div>
+      </a>
+
+      <a href="{{ '/course/block-01-understanding/' | relative_url }}" class="block-card">
+        <span class="block-card-number">01</span>
+        <h3>Understanding Your Codebase</h3>
+        <p>Let Claude analyze the project, generate CLAUDE.md, and explore the architecture.</p>
+        <div class="feature-badges">
+          <span class="feature-badge">/init</span>
+          <span class="feature-badge">CLAUDE.md</span>
+        </div>
+      </a>
+
+      <a href="{{ '/course/block-02-running-testing/' | relative_url }}" class="block-card">
+        <span class="block-card-number">02</span>
+        <h3>Running &amp; Testing</h3>
+        <p>Set up locally, run tests, build Docker &mdash; and watch Claude handle errors.</p>
+        <div class="feature-badges">
+          <span class="feature-badge">Bash tool</span>
+          <span class="feature-badge">permissions</span>
+        </div>
+      </a>
+
+      <a href="{{ '/course/block-03-planning-adrs/' | relative_url }}" class="block-card">
+        <span class="block-card-number">03</span>
+        <h3>Planning with ADRs &amp; Diagrams</h3>
+        <p>Think before you code. Create ADRs, Mermaid diagrams, and an implementation plan.</p>
+        <div class="feature-badges">
+          <span class="feature-badge">plan mode</span>
+          <span class="feature-badge">ADR</span>
+          <span class="feature-badge">Mermaid</span>
+        </div>
+      </a>
+
+      <a href="{{ '/course/block-04-making-changes/' | relative_url }}" class="block-card">
+        <span class="block-card-number">04</span>
+        <h3>Making Changes &mdash; Dark Theme</h3>
+        <p>Implement the dark theme, preview it, and commit &mdash; Claude handles the git workflow.</p>
+        <div class="feature-badges">
+          <span class="feature-badge">Edit/Write</span>
+          <span class="feature-badge">git</span>
+        </div>
+      </a>
+
+      <a href="{{ '/course/block-05-memory/' | relative_url }}" class="block-card">
+        <span class="block-card-number">05</span>
+        <h3>Memory &amp; Project Intelligence</h3>
+        <p>Teach Claude your preferences, team rules, and project conventions &mdash; across sessions.</p>
+        <div class="feature-badges">
+          <span class="feature-badge">.claude/rules</span>
+          <span class="feature-badge">/memory</span>
+          <span class="feature-badge">auto memory</span>
+        </div>
+      </a>
+
+      <a href="{{ '/course/block-06-skills/' | relative_url }}" class="block-card">
+        <span class="block-card-number">06</span>
+        <h3>Custom Skills</h3>
+        <p>Build reusable slash commands for K8s review, Docker audit, and team workflows.</p>
+        <div class="feature-badges">
+          <span class="feature-badge">/skills</span>
+          <span class="feature-badge">$ARGUMENTS</span>
+          <span class="feature-badge">/simplify</span>
+        </div>
+      </a>
+
+      <a href="{{ '/course/block-07-infrastructure/' | relative_url }}" class="block-card">
+        <span class="block-card-number">07</span>
+        <h3>Infrastructure &mdash; k3s on DO</h3>
+        <p>Provision a DigitalOcean droplet, install k3s, and deploy the app to Kubernetes.</p>
+        <div class="feature-badges">
+          <span class="feature-badge">k3s</span>
+          <span class="feature-badge">DigitalOcean</span>
+        </div>
+      </a>
+
+      <a href="{{ '/course/block-08-hooks/' | relative_url }}" class="block-card">
+        <span class="block-card-number">08</span>
+        <h3>Hooks &mdash; Workflow Automation</h3>
+        <p>Auto-format, notify, block dangerous commands &mdash; hooks fire at every lifecycle event.</p>
+        <div class="feature-badges">
+          <span class="feature-badge">hooks</span>
+          <span class="feature-badge">settings.json</span>
+        </div>
+      </a>
+
+      <a href="{{ '/course/block-09-mcp/' | relative_url }}" class="block-card">
+        <span class="block-card-number">09</span>
+        <h3>MCP Servers</h3>
+        <p>Connect Claude to GitHub, filesystems, and external APIs via the Model Context Protocol.</p>
+        <div class="feature-badges">
+          <span class="feature-badge">MCP</span>
+          <span class="feature-badge">mcp.json</span>
+        </div>
+      </a>
+
+      <a href="{{ '/course/block-10-github-actions/' | relative_url }}" class="block-card">
+        <span class="block-card-number">10</span>
+        <h3>GitHub Actions &amp; CI/CD</h3>
+        <p>Automate PR reviews, issue implementation, and code quality with Claude in CI.</p>
+        <div class="feature-badges">
+          <span class="feature-badge">@claude</span>
+          <span class="feature-badge">GitHub Actions</span>
+        </div>
+      </a>
+
+      <a href="{{ '/course/block-11-subagents/' | relative_url }}" class="block-card">
+        <span class="block-card-number">11</span>
+        <h3>Sub-agents</h3>
+        <p>Create specialized AI workers for security review, K8s validation, and parallel tasks.</p>
+        <div class="feature-badges">
+          <span class="feature-badge">/agents</span>
+          <span class="feature-badge">worktree</span>
+        </div>
+      </a>
+
+      <a href="{{ '/course/block-12-gitops/' | relative_url }}" class="block-card">
+        <span class="block-card-number">12</span>
+        <h3>GitOps Finale &mdash; ArgoCD</h3>
+        <p>The grand finale. Push to git, ArgoCD syncs, dark theme goes live on the internet.</p>
+        <div class="feature-badges">
+          <span class="feature-badge">ArgoCD</span>
+          <span class="feature-badge">/schedule</span>
+          <span class="milestone-badge">MILESTONE</span>
+        </div>
+      </a>
+
+      <a href="{{ '/course/block-13-advanced/' | relative_url }}" class="block-card">
+        <span class="block-card-number">13</span>
+        <h3>Advanced Patterns</h3>
+        <p>Agent teams, plugins, headless mode, Desktop app &mdash; and where to go next.</p>
+        <div class="feature-badges">
+          <span class="feature-badge">teams</span>
+          <span class="feature-badge">/batch</span>
+          <span class="feature-badge">plugins</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- Prerequisites & Cost -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-header">
+      <h2>What You Need</h2>
+      <p>Minimal prerequisites, minimal cost. That's the point.</p>
+    </div>
+    <div class="prereq-grid">
+      <div class="prereq-box">
+        <h3>Prerequisites</h3>
+        <ul>
+          <li>You know <strong>git</strong> and can open a <strong>terminal</strong></li>
+          <li>Basic familiarity with <strong>Docker</strong> concepts</li>
+          <li>A <strong>GitHub</strong> account</li>
+          <li>A <strong>DigitalOcean</strong> account (new accounts get $200 free credit)</li>
+          <li>Curiosity and about <strong>10 hours</strong> of focused time</li>
+        </ul>
+        <p style="margin-top: var(--space-md); font-style: italic; font-size: 0.9rem;">No Kubernetes experience needed &mdash; we teach that as we go.</p>
+      </div>
+      <div class="prereq-box">
+        <h3>Cost Breakdown</h3>
+        <div class="cost-item">
+          <span>Claude Pro subscription</span>
+          <span class="cost-amount">$20/mo</span>
+        </div>
+        <div class="cost-item">
+          <span>DigitalOcean droplet (s-2vcpu-4gb)</span>
+          <span class="cost-amount">~$24/mo</span>
+        </div>
+        <div class="cost-item">
+          <span>Domain name (optional)</span>
+          <span class="cost-amount">~$10/yr</span>
+        </div>
+        <div class="cost-item" style="border-bottom: 2px solid var(--border); padding-bottom: var(--space-md); margin-bottom: var(--space-sm);">
+          <span><strong>Total for the course</strong></span>
+          <span class="cost-amount" style="color: var(--accent);">~$25-45</span>
+        </div>
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: var(--space-sm);">
+          Tear down the droplet after the course to stop charges. DigitalOcean new accounts get $200 free credit &mdash; enough to run this course for free.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

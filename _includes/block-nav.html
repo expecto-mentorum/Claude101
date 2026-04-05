@@ -1,0 +1,33 @@
+{% assign blocks = site.pages | where_exp: "p", "p.path contains 'course/block-'" | where_exp: "p", "p.name == 'index.md'" | sort: "path" %}
+{% assign current_index = nil %}
+{% for b in blocks %}
+  {% if b.url == page.url %}
+    {% assign current_index = forloop.index0 %}
+  {% endif %}
+{% endfor %}
+
+<nav class="block-nav" aria-label="Course navigation">
+  {% if current_index and current_index > 0 %}
+    {% assign prev_index = current_index | minus: 1 %}
+    <a href="{{ blocks[prev_index].url | relative_url }}" class="block-nav-link block-nav-prev">
+      <span class="block-nav-arrow">&larr;</span>
+      <span class="block-nav-label">Previous</span>
+      <span class="block-nav-title">{{ blocks[prev_index].title }}</span>
+    </a>
+  {% else %}
+    <div class="block-nav-link block-nav-placeholder"></div>
+  {% endif %}
+
+  <a href="{{ '/course/' | relative_url }}" class="block-nav-toc">All Blocks</a>
+
+  {% assign next_index = current_index | plus: 1 %}
+  {% if current_index and next_index < blocks.size %}
+    <a href="{{ blocks[next_index].url | relative_url }}" class="block-nav-link block-nav-next">
+      <span class="block-nav-label">Next</span>
+      <span class="block-nav-title">{{ blocks[next_index].title }}</span>
+      <span class="block-nav-arrow">&rarr;</span>
+    </a>
+  {% else %}
+    <div class="block-nav-link block-nav-placeholder"></div>
+  {% endif %}
+</nav>
