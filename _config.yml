@@ -32,3 +32,5 @@ exclude:
   - CLAUDE.md
   - .claude/
   - "*.plan.md"
+  - vendor/
+  - docs/
