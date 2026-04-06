@@ -148,3 +148,10 @@ A: That's actually a great learning moment. Claude will read the test output, fi
 
 **Q: Can Claude handle merge conflicts?**
 A: Yes, but that's not in scope for this block. We're working on a clean branch. Merge conflict resolution comes up naturally in later blocks.
+
+---
+
+<div class="cta-block">
+  <p>Ready to check your retention?</p>
+  <a href="{{ '/course/block-04-making-changes/quiz/' | relative_url }}" class="hero-cta">Take the Quiz &rarr;</a>
+</div>

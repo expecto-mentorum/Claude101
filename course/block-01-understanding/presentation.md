@@ -99,3 +99,10 @@ Two modes of working with Claude Code:
 **Talking points:**
 
 > "Enough theory. Let's run `/init` on ai-coderrank and see what Claude discovers about our project. Then we'll have a real conversation about the architecture — API routes, component structure, theme switching, all of it. Switch to your terminal."
+
+---
+
+<div class="cta-block">
+  <p>Ready to check your retention?</p>
+  <a href="{{ '/course/block-01-understanding/quiz/' | relative_url }}" class="hero-cta">Take the Quiz &rarr;</a>
+</div>

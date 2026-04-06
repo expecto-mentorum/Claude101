@@ -267,3 +267,10 @@ Block 13: Advanced patterns and the ecosystem
 That's not a tutorial progression. That's a professional DevOps workflow. You've used the same tools, the same patterns, and the same architecture that teams at companies of all sizes use in production every day.
 
 The difference between you today and you 13 blocks ago isn't just that you know Claude Code. It's that you know how to work with an AI agent as a genuine collaborator — one that reads your code, understands your infrastructure, follows your rules, and helps you ship faster without cutting corners.
+
+---
+
+<div class="cta-block">
+  <p>Ready to check your retention?</p>
+  <a href="{{ '/course/block-13-advanced/quiz/' | relative_url }}" class="hero-cta">Take the Quiz &rarr;</a>
+</div>

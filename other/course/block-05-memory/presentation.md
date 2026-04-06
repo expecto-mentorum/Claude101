@@ -174,3 +174,8 @@ ai-coderrank/
 > **Переход**: Хорошо — хватит теории. Давайте построим полную систему памяти для ai-coderrank. К концу практики Claude будет знать этот проект как старший инженер, проработавший в команде год.
 
 ---
+
+<div class="cta-block">
+  <p>Готовы проверить себя?</p>
+  <a href="{{ '/other/course/block-05-memory/quiz/' | relative_url }}" class="hero-cta">Пройти квиз &rarr;</a>
+</div>

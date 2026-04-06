@@ -120,3 +120,10 @@ permalink: /other/course/block-00-welcome/presentation/
 > "Достаточно разговоров. Давайте установим эту штуку и приступим к делу. Переходите к практическому разделу — сейчас состоится наш первый разговор с Claude Code."
 
 Переход к практическому занятию.
+
+---
+
+<div class="cta-block">
+  <p>Готовы проверить себя?</p>
+  <a href="{{ '/other/course/block-00-welcome/quiz/' | relative_url }}" class="hero-cta">Пройти квиз &rarr;</a>
+</div>

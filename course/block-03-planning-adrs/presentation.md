@@ -153,3 +153,10 @@ A: No. ADRs are for *decisions*. Design docs are for *designs*. An ADR might say
 
 **Q: Does Mermaid support every kind of diagram?**
 A: Most of them — flowcharts, sequence diagrams, class diagrams, state diagrams, Gantt charts, ER diagrams, and more. It doesn't replace specialized tools for complex UML, but for infrastructure and flow diagrams it's excellent.
+
+---
+
+<div class="cta-block">
+  <p>Ready to check your retention?</p>
+  <a href="{{ '/course/block-03-planning-adrs/quiz/' | relative_url }}" class="hero-cta">Take the Quiz &rarr;</a>
+</div>

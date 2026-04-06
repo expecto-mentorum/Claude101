@@ -201,3 +201,10 @@ Remote control lets you manage from anywhere
 Это полноценный, современный, продакшн-качества пайплайн разработки и деплоя. Не учебная игрушка. Не симуляция. Настоящая вещь.
 
 Вы всё это построили. С Claude Code.
+
+---
+
+<div class="cta-block">
+  <p>Готовы проверить себя?</p>
+  <a href="{{ '/other/course/block-12-gitops/quiz/' | relative_url }}" class="hero-cta">Пройти квиз &rarr;</a>
+</div>

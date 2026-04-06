@@ -175,3 +175,8 @@ That's four layers of context, loaded automatically, before you type a single wo
 > **Transition**: Alright — enough theory. Let's build out the full memory system for ai-coderrank. By the end of the practical, Claude will know this project like a senior engineer who's been on the team for a year.
 
 ---
+
+<div class="cta-block">
+  <p>Ready to check your retention?</p>
+  <a href="{{ '/course/block-05-memory/quiz/' | relative_url }}" class="hero-cta">Take the Quiz &rarr;</a>
+</div>

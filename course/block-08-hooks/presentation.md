@@ -268,3 +268,8 @@ Toggle it on when building hooks. Toggle it off when you're done.
 > **Transition**: Let's build some hooks. You're about to wire up auto-formatting, file protection, notifications, and a confirmation prompt — all firing automatically without you lifting a finger.
 
 ---
+
+<div class="cta-block">
+  <p>Ready to check your retention?</p>
+  <a href="{{ '/course/block-08-hooks/quiz/' | relative_url }}" class="hero-cta">Take the Quiz &rarr;</a>
+</div>

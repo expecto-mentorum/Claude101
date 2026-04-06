@@ -108,3 +108,10 @@ This is arguably the most valuable pattern in Claude Code:
 **Talking points:**
 
 > "Time to get hands-on. We're going to set up the project, run the full test suite, build a Docker image, and then — my favorite part — deliberately break something and watch Claude fix it. Let's go."
+
+---
+
+<div class="cta-block">
+  <p>Ready to check your retention?</p>
+  <a href="{{ '/course/block-02-running-testing/quiz/' | relative_url }}" class="hero-cta">Take the Quiz &rarr;</a>
+</div>

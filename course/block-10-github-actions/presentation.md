@@ -204,3 +204,10 @@ If someone sends three `@claude` messages in a row, only the last one runs.
 | CLAUDE.md in CI | Your rules, applied automatically | Consistent reviews that follow team standards |
 | `max_turns` | Cost control knob | Limits how much work Claude does per invocation |
 | Issue-to-PR | Create PRs from issues | Write what you want, Claude implements it |
+
+---
+
+<div class="cta-block">
+  <p>Ready to check your retention?</p>
+  <a href="{{ '/course/block-10-github-actions/quiz/' | relative_url }}" class="hero-cta">Take the Quiz &rarr;</a>
+</div>

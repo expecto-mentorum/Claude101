@@ -202,3 +202,10 @@ Remote control lets you manage from anywhere
 That's a complete, modern, production-grade development and deployment pipeline. Not a tutorial toy. Not a simulation. The real thing.
 
 You built all of that. With Claude Code.
+
+---
+
+<div class="cta-block">
+  <p>Ready to check your retention?</p>
+  <a href="{{ '/course/block-12-gitops/quiz/' | relative_url }}" class="hero-cta">Take the Quiz &rarr;</a>
+</div>

@@ -150,3 +150,8 @@ Your Laptop                          DigitalOcean Droplet
 > **Переход**: Пора поднять настоящую инфраструктуру. Сейчас вы перейдёте от "у меня есть YAML-файлы" к "у меня работают поды в облаке". Поехали.
 
 ---
+
+<div class="cta-block">
+  <p>Готовы проверить себя?</p>
+  <a href="{{ '/other/course/block-07-infrastructure/quiz/' | relative_url }}" class="hero-cta">Пройти квиз &rarr;</a>
+</div>

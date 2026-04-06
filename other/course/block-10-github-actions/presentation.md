@@ -203,3 +203,10 @@ concurrency:
 | CLAUDE.md в CI | Ваши правила, применяемые автоматически | Согласованные ревью по стандартам команды |
 | `max_turns` | Рычаг контроля расходов | Ограничивает объём работы Claude за один вызов |
 | Issue-to-PR | Создание PR из issues | Напишите, что хотите, и Claude реализует |
+
+---
+
+<div class="cta-block">
+  <p>Готовы проверить себя?</p>
+  <a href="{{ '/other/course/block-10-github-actions/quiz/' | relative_url }}" class="hero-cta">Пройти квиз &rarr;</a>
+</div>

@@ -226,3 +226,8 @@ When you type `/` in Claude Code, you'll see both project and personal skills in
 > **Transition**: Time to build. You're about to create three custom skills, test them on real infrastructure code, and run `/simplify` on the dark theme you built in Block 4. Let's go.
 
 ---
+
+<div class="cta-block">
+  <p>Ready to check your retention?</p>
+  <a href="{{ '/course/block-06-skills/quiz/' | relative_url }}" class="hero-cta">Take the Quiz &rarr;</a>
+</div>

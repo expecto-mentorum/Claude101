@@ -122,3 +122,10 @@ Quick checklist — make sure everyone has:
 > "Alright, enough talking. Let's install this thing and get our hands dirty. Switch to the practical section — we're about to have our first conversation with Claude Code."
 
 Transition into the practical session.
+
+---
+
+<div class="cta-block">
+  <p>Ready to check your retention?</p>
+  <a href="{{ '/course/block-00-welcome/quiz/' | relative_url }}" class="hero-cta">Take the Quiz &rarr;</a>
+</div>

@@ -205,3 +205,10 @@ allowed-tools: [Read, Grep, Glob]
 | `model` | Выбор модели для каждого агента | Баланс скорости, стоимости и возможностей |
 | `isolation: worktree` | Изоляция через git worktree | Безопасные эксперименты без влияния на вашу работу |
 | `/agents` | Список всех настроенных агентов | Посмотреть весь состав агентов |
+
+---
+
+<div class="cta-block">
+  <p>Готовы проверить себя?</p>
+  <a href="{{ '/other/course/block-11-subagents/quiz/' | relative_url }}" class="hero-cta">Пройти квиз &rarr;</a>
+</div>

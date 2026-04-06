@@ -151,3 +151,8 @@ Seven steps. Thirty minutes. At the end, you have a real Kubernetes cluster runn
 > **Transition**: Time to provision some real infrastructure. You're about to go from "I have YAML files" to "I have pods running in the cloud." Let's do it.
 
 ---
+
+<div class="cta-block">
+  <p>Ready to check your retention?</p>
+  <a href="{{ '/course/block-07-infrastructure/quiz/' | relative_url }}" class="hero-cta">Take the Quiz &rarr;</a>
+</div>

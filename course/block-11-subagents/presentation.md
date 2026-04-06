@@ -206,3 +206,10 @@ allowed-tools: [Read, Grep, Glob]
 | `model` | Per-agent model selection | Balance speed, cost, and capability |
 | `isolation: worktree` | Git worktree isolation | Safe experimentation without affecting your work |
 | `/agents` | List all configured agents | See your full agent roster |
+
+---
+
+<div class="cta-block">
+  <p>Ready to check your retention?</p>
+  <a href="{{ '/course/block-11-subagents/quiz/' | relative_url }}" class="hero-cta">Take the Quiz &rarr;</a>
+</div>

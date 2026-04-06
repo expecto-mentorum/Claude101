@@ -193,3 +193,8 @@ This gives you fine-grained control. Claude can be a helpful assistant that read
 > **Transition**: Time to wire things up. You're about to connect Claude to GitHub and watch it create issues, comment on PRs, and navigate your project management workflow — all from the terminal.
 
 ---
+
+<div class="cta-block">
+  <p>Ready to check your retention?</p>
+  <a href="{{ '/course/block-09-mcp/quiz/' | relative_url }}" class="hero-cta">Take the Quiz &rarr;</a>
+</div>

@@ -97,3 +97,10 @@ permalink: /other/course/block-01-understanding/presentation/
 **Тезисы для выступления:**
 
 > "Хватит теории. Давайте запустим `/init` на ai-coderrank и посмотрим, что Claude узнает о нашем проекте. Затем проведём настоящий разговор об архитектуре — API-роуты, структура компонентов, переключение тем, всё это. Переходите в терминал."
+
+---
+
+<div class="cta-block">
+  <p>Готовы проверить себя?</p>
+  <a href="{{ '/other/course/block-01-understanding/quiz/' | relative_url }}" class="hero-cta">Пройти квиз &rarr;</a>
+</div>

@@ -106,3 +106,10 @@ permalink: /other/course/block-02-running-testing/presentation/
 **Тезисы для выступления:**
 
 > "Время практики. Мы настроим проект, прогоним полный набор тестов, соберём Docker-образ, а затем — моя любимая часть — намеренно что-нибудь сломаем и посмотрим, как Claude это исправит. Поехали."
+
+---
+
+<div class="cta-block">
+  <p>Готовы проверить себя?</p>
+  <a href="{{ '/other/course/block-02-running-testing/quiz/' | relative_url }}" class="hero-cta">Пройти квиз &rarr;</a>
+</div>
