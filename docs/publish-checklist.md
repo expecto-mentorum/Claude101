@@ -10,9 +10,9 @@ Complete every item before publishing or deploying a new version of the course s
 - [ ] Cost callouts on blocks 7, 10, 12
 
 ## Block Consistency
-- [ ] Every block has a single index.md with `## Part 1: Presentation` and `## Part 2: Hands-On` sections
-- [ ] Every index.md has front matter: layout, title, block_number, description, time, features, objectives
-- [ ] Every Hands-On section has: Duration, Outcome, Prerequisites, steps, expected result, failure modes
+- [ ] Every block has `index.md`, `presentation.md`, and `hands-on.md`
+- [ ] Every overview page has front matter: layout, title, block_number, description, time, features, objectives
+- [ ] Every Hands-On page has: Duration, Outcome, Prerequisites, steps, expected result, failure modes
 - [ ] Block numbering is sequential (00-13)
 - [ ] Previous/Next navigation works across all blocks
 

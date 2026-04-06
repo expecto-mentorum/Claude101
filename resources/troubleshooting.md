@@ -379,7 +379,7 @@ Fix the underlying pod issue (see [Infrastructure Issues](#infra-issues)) and Ar
 <h3>Claude Action not triggering</h3>
 <p><strong>Check:</strong> Is the workflow file present and the trigger correct?</p>
 <p><strong>Likely cause:</strong> Workflow file not in <code>.github/workflows/</code>, trigger event doesn't match, <code>if</code> condition filters it out, or <code>ANTHROPIC_API_KEY</code> secret is missing.</p>
-<p><strong>Fix:</strong> Verify all five of these:
+<p><strong>Fix:</strong> Verify all five of these:</p>
 
 1. Workflow file lives in `.github/workflows/`
 2. Trigger event matches (`issue_comment`, `pull_request_review_comment`)
@@ -395,7 +395,13 @@ Fix the underlying pod issue (see [Infrastructure Issues](#infra-issues)) and Ar
 <h3>Action runs but no output</h3>
 <p><strong>Check:</strong> Open the run log in the GitHub Actions tab.</p>
 <p><strong>Likely cause:</strong> API key is invalid/expired, you're rate-limited, <code>max_turns</code> is set too low, or CLAUDE.md has overly restrictive instructions.</p>
-<p><strong>Fix:</strong> Check your Anthropic dashboard for rate limits and API key status. Increase <code>max_turns</code> if the action exits too early.</p>
+<p><strong>Fix:</strong></p>
+
+- Check your Anthropic dashboard for API key status and rate-limit errors
+- Increase `max_turns` if the workflow exits too early
+- Review the workflow log to confirm Claude actually received the trigger payload
+- Temporarily simplify restrictive `CLAUDE.md` instructions if the agent is getting blocked by policy
+
 <p><strong>Success signal:</strong> The action run log shows Claude's response and it posts output to the PR/issue.</p>
 </div>
 

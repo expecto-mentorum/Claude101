@@ -5,6 +5,9 @@
     {% assign current_index = forloop.index0 %}
   {% endif %}
 {% endfor %}
+{% if current_index == nil and page.block_number != nil %}
+  {% assign current_index = page.block_number | plus: 0 %}
+{% endif %}
 
 <nav class="block-nav" aria-label="Course navigation">
   {% if current_index and current_index > 0 %}

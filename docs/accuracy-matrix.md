@@ -71,7 +71,7 @@ Last full review: 2026-04-06
 | 55 | `CLAUDE.local.md` is gitignored by convention | block-05 index.md, cheatsheet | docs.anthropic.com/en/docs/claude-code | 2026-04-06 | correct |
 | 56 | Course block count is 14 (blocks 00 through 13) | index.html, course index | course choice | -- | course choice |
 | 57 | Default deployment path is NodePort 30080 on droplet public IP | index.html, block-12 index.md, course-contract | course choice | 2026-04-06 | correct |
-| 58 | Each block is a single index.md with Part 1: Presentation and Part 2: Hands-On sections | all block dirs, CLAUDE.md, prompt-v2, publish-checklist | repo structure | 2026-04-06 | correct |
+| 58 | Each block has `index.md` overview plus `presentation.md` and `hands-on.md` | all block dirs, CLAUDE.md, prompt-v2, publish-checklist | repo structure | 2026-04-06 | correct |
 
 ---
 

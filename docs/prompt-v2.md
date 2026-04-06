@@ -22,17 +22,17 @@
 
 6. **Experimental features**: Anything marked experimental, research preview, or beta in official docs must be labeled as such in our content. Never present experimental features as stable.
 
-7. **Deliverables per block**: Each block is a single `index.md` containing:
-   - YAML front matter: layout, title, block_number, description, time, features, objectives
-   - Intro/overview section
-   - `## Part 1: Presentation {#presentation}` — timed slides with talking points, fun facts, analogies
-   - `## Part 2: Hands-On {#practical}` — numbered steps with exact commands/prompts, expected output, common failure modes
+7. **Deliverables per block**: Each block ships as three pages:
+   - `index.md` — short overview, context, prerequisites, and links to the two formats
+   - `presentation.md` — timed slides with talking points, fun facts, analogies
+   - `hands-on.md` — numbered steps with exact commands/prompts, expected output, common failure modes
 
-8. **Block contract**: Every Hands-On section must include:
+8. **Block contract**: Every Hands-On page must include:
    - Duration, Outcome, and Prerequisites in a blockquote header
    - Expected result: what success looks like
    - Common failure modes: top 3 things that can go wrong
    - Handoff: transition to the next block
+   - Copy-pasteable code blocks for terminal commands and Claude prompts
 
 9. **Tone**: Energetic educator. Analogies, hooks, fun facts. Not dry, not marketing. Like a senior engineer excited to share their toolkit.
 

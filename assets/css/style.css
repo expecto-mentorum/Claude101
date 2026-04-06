@@ -510,10 +510,21 @@ pre code {
   transition: all 0.2s ease;
 }
 
-.block-part-link:hover {
+.block-part-link:hover,
+.block-part-link.is-active {
   background: var(--bg-dark);
   color: var(--text-inverse);
   border-color: var(--bg-dark);
+}
+
+.block-part-eyebrow {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-sm);
 }
 
 .block-number {
@@ -901,7 +912,8 @@ pre code {
   min-width: 0;
 }
 
-.resource-content table {
+.resource-content table,
+.block-content table {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
@@ -913,7 +925,9 @@ pre code {
 }
 
 .resource-content th,
-.resource-content td {
+.resource-content td,
+.block-content th,
+.block-content td {
   padding: 0.85rem 1rem;
   text-align: left;
   vertical-align: top;
@@ -921,40 +935,53 @@ pre code {
 }
 
 .resource-content thead th,
-.resource-content th {
+.resource-content th,
+.block-content thead th,
+.block-content th {
   font-weight: 600;
   color: var(--text-primary);
   border-bottom: 1px solid var(--border);
   background: rgba(240, 238, 230, 0.75);
 }
 
-.resource-content tbody tr + tr td {
+.resource-content tbody tr + tr td,
+.block-content tbody tr + tr td {
   border-top: 1px solid var(--border-light);
 }
 
 .resource-content th + th,
-.resource-content td + td {
+.resource-content td + td,
+.block-content th + th,
+.block-content td + td {
   border-left: 1px solid rgba(221, 217, 205, 0.7);
   padding-left: 1.25rem;
 }
 
 .resource-content table:has(th:last-child:nth-child(2)) th:first-child,
-.resource-content table:has(th:last-child:nth-child(2)) td:first-child {
+.resource-content table:has(th:last-child:nth-child(2)) td:first-child,
+.block-content table:has(th:last-child:nth-child(2)) th:first-child,
+.block-content table:has(th:last-child:nth-child(2)) td:first-child {
   min-width: 190px;
 }
 
 .resource-content table:has(th:last-child:nth-child(3)) th:first-child,
-.resource-content table:has(th:last-child:nth-child(3)) td:first-child {
+.resource-content table:has(th:last-child:nth-child(3)) td:first-child,
+.block-content table:has(th:last-child:nth-child(3)) th:first-child,
+.block-content table:has(th:last-child:nth-child(3)) td:first-child {
   min-width: 180px;
 }
 
 .resource-content table:has(th:last-child:nth-child(3)) th:nth-child(2),
-.resource-content table:has(th:last-child:nth-child(3)) td:nth-child(2) {
+.resource-content table:has(th:last-child:nth-child(3)) td:nth-child(2),
+.block-content table:has(th:last-child:nth-child(3)) th:nth-child(2),
+.block-content table:has(th:last-child:nth-child(3)) td:nth-child(2) {
   min-width: 150px;
 }
 
 .resource-content td code,
-.resource-content th code {
+.resource-content th code,
+.block-content td code,
+.block-content th code {
   white-space: nowrap;
 }
 

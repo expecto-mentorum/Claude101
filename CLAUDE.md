@@ -18,16 +18,16 @@ bundle exec jekyll serve  # Serve locally at localhost:4000/Claude101/
 - **Jekyll** static site with GitHub Pages deployment
 - **`_layouts/`**: `default.html` (base) and `block.html` (course block pages)
 - **`_includes/`**: `head.html`, `header.html`, `footer.html`, `block-nav.html`
-- **`course/block-NN-slug/`**: Each block has a single `index.md` with two sections: `## Part 1: Presentation {#presentation}` and `## Part 2: Hands-On {#practical}`
+- **`course/block-NN-slug/`**: Each block has an `index.md` overview plus dedicated `presentation.md` and `hands-on.md` pages
 - **`resources/`**: Cheatsheet, cost guide, troubleshooting
 - **`assets/css/style.css`**: Full design system (Anthropic-inspired palette)
 
 ## Content Conventions
 
 - Course content is markdown with Jekyll front matter
-- Block index.md files use `layout: block` with fields: `title`, `block_number`, `description`, `time`, `features`, `objectives`
+- Block overview pages use `layout: block`; presentation and hands-on pages use `layout: block-part`
 - Tone: energetic educator — analogies, fun facts, not dry
-- Each block has two parts: presentation (voice-over) and practical (screen-sharing steps)
+- Each block has three learner entry points: overview, presentation, and hands-on
 - Complexity increases linearly from Block 0 (basics) to Block 13 (advanced)
 
 ## Design System
