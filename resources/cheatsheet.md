@@ -14,13 +14,13 @@ A quick reference for everything covered in the course.
 
 ```bash
 # Install
-curl -fsSL https://claude.ai/install.sh | bash
+npm install -g @anthropic-ai/claude-code
 
 # Update
 claude update
 
-# Authenticate
-claude auth login
+# Authenticate (happens automatically on first run)
+claude
 
 # Check version
 claude --version
@@ -38,16 +38,32 @@ claude --resume               # Pick session to resume
 claude -n "dark-theme"        # Name this session
 ```
 
+## MCP Setup
+
+```bash
+# Add an MCP server (recommended over hand-editing .mcp.json)
+claude mcp add <name> --scope project -- <command> [args...]
+
+# Example: add GitHub MCP
+claude mcp add github --scope project -- npx -y @modelcontextprotocol/server-github
+
+# List configured MCP servers
+claude mcp list
+
+# Remove an MCP server
+claude mcp remove <name>
+```
+
 ## Key Flags
 
 ```bash
 claude --model opus           # Use Opus 4.6
 claude --model haiku          # Use Haiku 4.5 (fast/cheap)
-claude --effort max           # Maximum reasoning (Opus only)
-claude --permission-mode plan # Read-only mode
+claude --effort max           # Maximum reasoning (Opus 4.6 only)
+claude --permission-mode plan # Plan mode (read-only)
 claude -w my-feature          # Work in a git worktree
 claude --add-dir ../other     # Add extra directory
-claude --mcp-config mcp.json  # Load MCP config
+claude --mcp-config mcp.json  # Load custom MCP config file
 claude --output-format json   # JSON output (for scripts)
 ```
 
@@ -95,7 +111,7 @@ claude --output-format json   # JSON output (for scripts)
 ./.claude/rules/*.md         # Path-specific rules
 ./.claude/settings.json      # Project settings (shared)
 ./.claude/settings.local.json # Local settings (gitignored)
-./.claude/mcp.json           # MCP server config
+./.mcp.json                  # MCP server config (project-scoped)
 ./.claude/skills/*/SKILL.md  # Custom skills
 ./.claude/agents/*.md        # Custom sub-agents
 ~/.claude/settings.json      # User settings
@@ -181,6 +197,13 @@ jobs:
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
 ```
+
+## Key Flags — Continued
+
+| Flag | What it does |
+|------|-------------|
+| `--effort min\|low\|medium\|high\|max` | Control reasoning depth (only works with Opus 4.6). Higher effort = more thinking tokens, slower but more thorough. |
+| `--permission-mode` | Set permission mode: `default`, `plan`, `acceptEdits`, `bypassPermissions` |
 
 ## Headless Mode (For Scripts)
 

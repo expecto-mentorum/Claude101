@@ -97,7 +97,7 @@ claude -p "validate the JSON in .claude/settings.json"
 ### MCP server not connecting
 
 ```bash
-# Check config location: .claude/mcp.json
+# Check config location: .mcp.json (project) or ~/.claude.json (user)
 # Restart session after changing mcp.json
 # Verify the server binary/command exists
 

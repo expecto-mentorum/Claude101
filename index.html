@@ -46,8 +46,8 @@ title: "Claude Code 101 — From Zero to Deployed with AI"
       </div>
       <div class="prereq-box" style="text-align: center;">
         <h3>After</h3>
-        <p>Dark theme. Docker image. CI/CD pipeline. k3s cluster. ArgoCD GitOps. Public URL.</p>
-        <code style="font-size: 0.85rem;">https://your-domain.com &rarr; live on the internet</code>
+        <p>Dark theme. Docker image. CI/CD pipeline. k3s cluster. ArgoCD GitOps. Public IP.</p>
+        <code style="font-size: 0.85rem;">http://&lt;droplet-ip&gt;:30080 &rarr; live on the internet</code>
       </div>
     </div>
     <div class="fun-fact" style="margin-top: var(--space-xl);">
@@ -83,6 +83,11 @@ title: "Claude Code 101 — From Zero to Deployed with AI"
         <span class="audience-icon">{ }</span>
         <h3>Developers</h3>
         <p>Ship features faster, get instant code reviews, manage git workflows, and understand unfamiliar codebases.</p>
+      </div>
+      <div class="audience-card">
+        <span class="audience-icon">&#9889;</span>
+        <h3>AI-Curious Practitioners</h3>
+        <p>You use a terminal daily but haven't tried AI tooling yet. This is your practical on-ramp &mdash; real tasks, not toy demos.</p>
       </div>
     </div>
   </div>
@@ -315,14 +320,17 @@ title: "Claude Code 101 — From Zero to Deployed with AI"
           <span>Domain name (optional)</span>
           <span class="cost-amount">~$10/yr</span>
         </div>
-        <div class="cost-item" style="border-bottom: 2px solid var(--border); padding-bottom: var(--space-md); margin-bottom: var(--space-sm);">
+        <div class="cost-item cost-total" style="border-bottom: 2px solid var(--border); border-top: 2px solid var(--border); padding: var(--space-md) 0;">
           <span><strong>Total for the course</strong></span>
-          <span class="cost-amount" style="color: var(--accent);">~$25-45</span>
+          <span class="cost-amount" style="color: var(--accent); font-size: 1.1rem;">~$25-45</span>
         </div>
-        <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: var(--space-sm);">
+        <p style="font-size: 0.85rem; color: var(--text-muted);">
           Tear down the droplet after the course to stop charges. DigitalOcean new accounts get $200 free credit &mdash; enough to run this course for free.
         </p>
       </div>
     </div>
+    <p style="text-align: center; font-size: 0.8rem; color: var(--text-muted); margin-top: var(--space-xl);">
+      Facts, pricing, and Claude Code features last verified on <strong>2026-04-05</strong>. See <a href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">official docs</a> for the latest.
+    </p>
   </div>
 </section>

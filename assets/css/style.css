@@ -322,7 +322,7 @@ pre code {
 /* --- Audience Cards --- */
 .audience-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: var(--space-lg);
 }
 
@@ -451,16 +451,28 @@ pre code {
 .cost-item {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: var(--space-sm) 0;
   border-bottom: 1px solid var(--border-light);
   font-size: 0.95rem;
+  gap: var(--space-md);
 }
 
 .cost-item:last-child { border-bottom: none; }
 
+.cost-item span:first-child {
+  flex: 1;
+}
+
 .cost-amount {
   font-weight: 600;
   color: var(--text-primary);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.cost-total {
+  margin-bottom: var(--space-lg);
 }
 
 /* --- Block Page Styles --- */
@@ -472,6 +484,30 @@ pre code {
   margin-bottom: var(--space-2xl);
   padding-bottom: var(--space-xl);
   border-bottom: 1px solid var(--border-light);
+}
+
+.block-parts-nav {
+  display: flex;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+}
+
+.block-part-link {
+  display: inline-block;
+  padding: 0.45rem 1.2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
+}
+
+.block-part-link:hover {
+  background: var(--bg-dark);
+  color: var(--text-inverse);
+  border-color: var(--bg-dark);
 }
 
 .block-number {
@@ -760,7 +796,7 @@ pre code {
     grid-template-columns: repeat(2, 1fr);
   }
   .audience-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   .footer-grid {
     grid-template-columns: 1fr 1fr;

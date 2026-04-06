@@ -6,7 +6,7 @@ A hands-on course teaching DevOps, SRE, QA, and developers to use Claude Code in
 
 ## What This Is
 
-14 progressive blocks that take you from your first `claude` command to deploying a real application on Kubernetes via GitOps. Each block has a presentation (talking points) and a practical (step-by-step screen-sharing guide).
+14 progressive blocks that take you from your first `claude` command to deploying a real application on Kubernetes via GitOps. Each block is a single page with two sections: **Presentation** (talking points for voice-over) and **Hands-On** (step-by-step screen-sharing guide).
 
 The course uses [ai-coderrank](https://github.com/exitStatus0/ai-coderrank) as the real-world project. By the end, you'll have deployed a modified version (dark theme) to a k3s cluster on DigitalOcean, accessible via public internet.
 
@@ -29,9 +29,21 @@ The course uses [ai-coderrank](https://github.com/exitStatus0/ai-coderrank) as t
 | 12 | GitOps Finale — ArgoCD | ArgoCD, `/schedule` |
 | 13 | Advanced Patterns | Agent teams, `/batch`, plugins |
 
+## Deployment
+
+The site deploys automatically via GitHub Actions (`.github/workflows/pages.yml`) on push to `main`. No manual build needed.
+
 ## Local Development
 
+Requires **Ruby >= 3.1**. The repo pins Ruby 3.3 in `.ruby-version`.
+
 ```bash
+# macOS: install Ruby via Homebrew if system Ruby is too old
+brew install ruby
+# Or use a version manager:
+# rbenv install 3.3.0 && rbenv local 3.3.0
+# asdf install ruby 3.3.0
+
 # Install Jekyll dependencies
 bundle install
 

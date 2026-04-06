@@ -18,7 +18,7 @@ bundle exec jekyll serve  # Serve locally at localhost:4000/Claude101/
 - **Jekyll** static site with GitHub Pages deployment
 - **`_layouts/`**: `default.html` (base) and `block.html` (course block pages)
 - **`_includes/`**: `head.html`, `header.html`, `footer.html`, `block-nav.html`
-- **`course/block-NN-slug/`**: Each block has `index.md`, `presentation.md`, `practical.md`
+- **`course/block-NN-slug/`**: Each block has a single `index.md` with two sections: `## Part 1: Presentation {#presentation}` and `## Part 2: Hands-On {#practical}`
 - **`resources/`**: Cheatsheet, cost guide, troubleshooting
 - **`assets/css/style.css`**: Full design system (Anthropic-inspired palette)
 
