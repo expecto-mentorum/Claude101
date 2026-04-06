@@ -903,7 +903,8 @@ pre code {
 
 .resource-content table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   margin: var(--space-lg) 0 var(--space-xl);
   background: rgba(240, 238, 230, 0.35);
   border: 1px solid var(--border-light);
@@ -916,6 +917,7 @@ pre code {
   padding: 0.85rem 1rem;
   text-align: left;
   vertical-align: top;
+  line-height: 1.5;
 }
 
 .resource-content thead th,
@@ -928,6 +930,37 @@ pre code {
 
 .resource-content tbody tr + tr td {
   border-top: 1px solid var(--border-light);
+}
+
+.resource-content th + th,
+.resource-content td + td {
+  border-left: 1px solid rgba(221, 217, 205, 0.7);
+  padding-left: 1.25rem;
+}
+
+.resource-content table:has(th:last-child:nth-child(2)) th:first-child,
+.resource-content table:has(th:last-child:nth-child(2)) td:first-child {
+  min-width: 190px;
+}
+
+.resource-content table:has(th:last-child:nth-child(3)) th:first-child,
+.resource-content table:has(th:last-child:nth-child(3)) td:first-child {
+  min-width: 180px;
+}
+
+.resource-content table:has(th:last-child:nth-child(3)) th:nth-child(2),
+.resource-content table:has(th:last-child:nth-child(3)) td:nth-child(2) {
+  min-width: 150px;
+}
+
+.resource-content td code,
+.resource-content th code {
+  white-space: nowrap;
+}
+
+.resource-content h3 {
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-sm);
 }
 
 /* --- Callout Components --- */

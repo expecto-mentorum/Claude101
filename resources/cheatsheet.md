@@ -37,7 +37,7 @@ Type `/help` inside any session to see all available commands.
 
 ## Slash Commands
 
-<span class="badge badge-daily">Daily</span>
+### Daily
 
 | Command | Description |
 |---------|-------------|
@@ -49,7 +49,7 @@ Type `/help` inside any session to see all available commands.
 | `/permissions` | Manage tool access |
 | `/rename "name"` | Rename this session |
 
-<span class="badge badge-advanced">Advanced</span>
+### Advanced
 
 | Command | Description |
 |---------|-------------|
@@ -60,7 +60,7 @@ Type `/help` inside any session to see all available commands.
 | `/add-dir` | Add directory access |
 | `/config` | Configure settings |
 
-<span class="badge badge-advanced">Automation</span>
+### Automation
 
 | Command | Description |
 |---------|-------------|
@@ -68,7 +68,7 @@ Type `/help` inside any session to see all available commands.
 | `/schedule` | Create cloud scheduled tasks |
 | `/batch "instruction"` | Parallel changes across files |
 
-<span class="badge badge-experimental">Experimental</span>
+### Experimental
 
 Agent teams -- coordinate multiple sub-agents on a single task. Enable with `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1`.
 
