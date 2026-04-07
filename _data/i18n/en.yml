@@ -62,6 +62,19 @@ quiz:
   level_solid: Solid
   level_developing: Developing
   level_review: "Needs Review"
+  ultraplan_question:
+    id: "ultraplan-bonus"
+    type: single_choice
+    prompt: "What is the best description of `/ultraplan` in Claude Code?"
+    points: 1
+    options:
+      - "A command that automatically deploys your current branch to production"
+      - "A way to send a planning task from your CLI to Claude Code on the web for richer review, then execute on the web or back in your terminal"
+      - "A flag that only increases reasoning effort for the local session"
+      - "A replacement for `/schedule` that runs recurring background tasks"
+    correct_answer: 1
+    explanation: "Ultraplan is a research-preview flow that hands a planning task from your CLI to Claude Code on the web in plan mode. You can review the draft in the browser, comment inline, ask for revisions, and then either start coding on the web or send the approved plan back to your terminal."
+    review_link: ""
 
 switcher:
   english: English

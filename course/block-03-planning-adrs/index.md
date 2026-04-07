@@ -6,12 +6,14 @@ description: "Use Plan mode to think before acting, create Architecture Decision
 time: "~35 min (10 min presentation + 25 min practical)"
 features:
   - Plan Mode (/plan, Shift+Tab)
+  - Ultraplan (/ultraplan)
   - Edit/Write Tools
   - Structured Output
   - Mermaid Diagrams
 objectives:
   - Understand why planning matters even when working with AI
   - Use Plan mode to outline a multi-file theme change before touching code
+  - Know when to keep planning local and when to send a bigger task to ultraplan on Claude Code on the web
   - Create an Architecture Decision Record (ADR) that captures the *why* behind a decision
   - Generate Mermaid diagrams for infrastructure topology, traffic flow, and deployment pipeline
   - Review and iterate on a plan before committing to implementation
@@ -32,7 +34,7 @@ This block is about discipline. Not the boring kind — the kind that makes you 
 
 ## What We'll Cover
 
-1. **Plan mode** — how Shift+Tab and `/plan` switch Claude from "doer" to "thinker"
+1. **Plan mode and ultraplan** — when to plan locally, and when to send a bigger plan to Claude Code on the web
 2. **Architecture Decision Records** — lightweight docs that capture decisions and their reasoning
 3. **Mermaid diagrams** — text-based diagrams that live in your repo and render on GitHub
 4. **The dark theme plan** — mapping out every file we'll touch, every variable we'll change, before writing a single line of code
@@ -55,6 +57,8 @@ These aren't homework assignments. They're the kind of artifacts that senior eng
 If you've ever inherited a project and asked "why is this configured this way?" — only to find zero documentation — you know the pain. ADRs solve that. They're not design docs (those are long and nobody reads them). ADRs are short, opinionated, and answer one question: **why did we make this choice?**
 
 And Mermaid diagrams? They're version-controlled, diff-friendly, and GitHub renders them natively. No more Lucidchart links that expire when someone leaves the company.
+
+One more planning tool is worth keeping in mind even before we demo it deeply in Block 13: **`/ultraplan`**. Local `/plan` is perfect when the terminal is enough. Ultraplan is for bigger changes where you want Claude to draft the plan remotely on Claude Code on the web, let you comment inline in the browser, and then either execute in the web session or send the approved plan back to your terminal.
 
 ## Choose Your Format
 

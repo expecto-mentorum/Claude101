@@ -52,6 +52,37 @@ script. Tell me every file we'll need to touch and what changes each one needs.
 
 ---
 
+### Step 1B: Optional — Send a Bigger Plan to Ultraplan (~4 min)
+
+If you have Claude Code on the web available and this repo is on GitHub, try the cloud planning flow too. This is where `ultraplan` shines: bigger initiatives, richer review, and cleaner sign-off before execution.
+
+**In the same Claude session, type:**
+
+```text
+/ultraplan plan a safe migration of ai-coderrank from NodePort-only public access
+to a domain + TLS setup on this k3s droplet. Include repo files to change,
+traffic-flow changes, rollout steps, rollback steps, and validation checks.
+```
+
+**What to watch for:**
+- Claude opens a confirmation flow before launching the remote planning session
+- Your terminal shows an ultraplan status indicator while the cloud session researches and drafts
+- If Claude needs clarification, the status changes to “needs your input”
+- When the draft is ready, use `/tasks` and open the session link in the browser
+
+In the browser, review the plan like a real design review:
+- highlight a paragraph and leave an inline comment
+- ask Claude to revise one section instead of rewriting the whole thing
+- use the outline sidebar to jump between rollout, rollback, and validation sections
+
+When the plan is good, you have two valid paths:
+- **Approve Claude’s plan and start coding in your browser** — keep the work in Claude Code on the web
+- **Approve plan and teleport back to terminal** — send the approved plan back to your local session and implement it there
+
+> **Direct speech:** "This is the moment where Claude stops feeling like a chat window and starts feeling like a real planning surface. For small work I stay in `/plan`. For migrations, platform changes, or anything that needs review comments on exact sections, I reach for `/ultraplan`."
+
+---
+
 ### Step 2: Create the ADR Directory and Document (8 min)
 
 Now we'll ask Claude to create an Architecture Decision Record. Stay in Plan mode for the initial discussion, then switch to Act mode for the file creation.
@@ -289,6 +320,8 @@ Before moving to Block 4, verify:
 3. **Mermaid diagrams are living documentation.** They live in your repo, they're diffable, and GitHub renders them. No more broken Lucidchart links.
 
 4. **Iteration is the secret.** Your first prompt won't produce the perfect output. The second or third refinement will. This is normal and expected — it's how working with AI is supposed to feel.
+
+5. **`/plan` and `/ultraplan` are a pair.** Use local Plan mode for quick structure and low-friction thinking. Use ultraplan when the plan is big enough that inline comments, remote drafting, and execution handoff are worth the extra surface area.
 
 ---
 

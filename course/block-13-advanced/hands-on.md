@@ -216,6 +216,37 @@ Review the output. This is the kind of report that most teams only generate when
 
 ---
 
+### Step 4B: Ultraplan — Cloud Review for Bigger Plans (~3 min)
+
+Now use the companion feature to local `/plan`: **`/ultraplan`**. This is for work that deserves a richer review surface than the terminal gives you.
+
+In your current Claude Code session, type:
+
+```text
+/ultraplan plan the next phase of ai-coderrank after this course: add a real
+domain, TLS, a staging namespace, and a rollback-safe release checklist. Include
+the repo files to touch, the order of work, validation steps, and rollback steps.
+```
+
+What happens next:
+- Claude opens a confirmation flow before launching the cloud planning session
+- your terminal shows an ultraplan status indicator while Claude researches remotely
+- if the cloud session needs clarification, the status changes to “needs your input”
+- when it is ready, run `/tasks` and open the browser link
+
+Inside Claude Code on the web:
+- review the outline in the sidebar
+- highlight a rollout or rollback section and leave an inline comment
+- ask Claude to revise only the part you disagree with instead of starting over
+
+When the plan is ready, choose the execution path that matches the moment:
+- **Approve Claude’s plan and start coding in your browser** if you want the cloud session to keep going
+- **Approve plan and teleport back to terminal** if you want to keep implementation local with your existing shell, repo state, and tools
+
+> **Direct speech:** "This is the sweet spot for ultraplan: something bigger than a quick refactor, but still concrete enough that I want a real plan, comments on exact sections, and a clean handoff back into implementation."
+
+---
+
 ### Step 5: Quick Command Sweep — The Missing 20% (~2 min)
 
 These are high-value commands that do not need their own full block, but absolutely belong in your day-to-day toolkit.
@@ -239,6 +270,7 @@ What to notice:
 - `/diff` is the fast way to inspect what changed before you commit
 - `/skills`, `/mcp`, and `/hooks` tell you what extension layers are active
 - `/model` lets you inspect or change the current model without restarting the session
+- `/tasks` becomes especially useful when agent teams or ultraplan sessions are running
 
 Now, in a regular shell, try the CLI-side management commands:
 

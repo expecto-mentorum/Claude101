@@ -208,6 +208,12 @@ Claude Code isn't just a CLI. It's an ecosystem that's growing fast. Here's the 
 - Built-in virtual machine — runs code, installs packages, starts servers
 - Best for: quick sessions, using someone else's computer, Chromebook users, demoing to others
 
+**Ultraplan**
+- Launch from the CLI with `/ultraplan <prompt>` or by mentioning `ultraplan` in a normal prompt
+- Claude drafts the plan remotely in Claude Code on the web while your terminal stays free
+- Review the plan in the browser with inline comments and revisions, then either execute on the web or send the approved plan back to your terminal
+- Best for: migrations, architecture reviews, and multi-step infrastructure work where terminal-only review feels cramped
+
 **Plugins**
 - Package and distribute skills, hooks, and agent configurations
 - Share your team's tooling as an installable plugin
@@ -227,6 +233,7 @@ You've completed Claude Code 101. Here's your roadmap for what comes next:
 **Short-term growth** (next month):
 - Integrate headless mode into one of your CI pipelines
 - Set up `/schedule` for daily operational checks on a real system
+- Use `/ultraplan` once for a real migration or platform-change plan and review it in the browser instead of the terminal
 - Try agent teams on a complex code review
 - Explore the Desktop app for visual workflows
 

@@ -94,12 +94,14 @@ This course is terminal-first, but Claude Code also runs in VS Code, JetBrains, 
 | `/doctor` | Diagnose install and settings issues |
 | `/hooks` | Inspect active hook configuration |
 | `/mcp` | Manage MCP connections and auth |
+| `/tasks` | Open the task list for agent teams and ultraplan sessions |
 | `/skills` | List available skills |
 | `/plugin` | Manage plugins |
 | `/agents` | List configured sub-agents |
 | `/add-dir` | Add directory access |
 | `/config` | Configure settings |
 | `/remote-control` | Continue this session remotely |
+| `/ultraplan "prompt"` | Send a planning task to Claude Code on the web for richer review |
 | `/security-review` | Review current diff for security issues |
 
 ### Automation
@@ -113,6 +115,10 @@ This course is terminal-first, but Claude Code also runs in VS Code, JetBrains, 
 
 <div class="callout-advanced" markdown="1">
 Claude Code shows built-in commands and bundled skills together in the slash menu. High-value bundled skills include <code>/simplify</code>, <code>/batch</code>, <code>/debug</code>, and <code>/loop</code>.
+</div>
+
+<div class="callout-advanced" markdown="1">
+<code>/ultraplan</code> is in research preview. It requires Claude Code on the web and a GitHub repository. Launch it with <code>/ultraplan &lt;prompt&gt;</code>, include the word <code>ultraplan</code> in a normal prompt, or escalate a local plan to the web from the plan approval dialog. Use <code>/tasks</code> to open the active cloud session, comment inline in the browser, then either execute on the web or send the approved plan back to your terminal.
 </div>
 
 ### Experimental

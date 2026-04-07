@@ -18,6 +18,9 @@
   }
 
   var questions = quiz.questions || [];
+  if (strings.ultraplan_question && !questions.some(function (q) { return q.id === strings.ultraplan_question.id; })) {
+    questions = questions.concat([strings.ultraplan_question]);
+  }
   if (questions.length === 0) {
     container.innerHTML = '<p>' + (strings.no_questions || 'No questions available.') + '</p>';
     return;

@@ -54,6 +54,18 @@ translation_key: block-03-presentation
 
 **Show on screen:** Toggle Shift+Tab in Claude Code and show how the mode indicator changes.
 
+#### When to escalate to ultraplan
+
+- Local `/plan` is best when the terminal is enough and you just need a fast plan-review loop
+- **`/ultraplan`** is the cloud version of planning: it sends the planning task from your CLI to Claude Code on the web in plan mode
+- Best fit: migrations, multi-step infrastructure changes, and anything where inline browser comments are easier than replying in plain terminal text
+
+Example line to say out loud:
+
+> "If `/plan` is the whiteboard next to your desk, `/ultraplan` is the design review room. Claude drafts remotely, I open the browser, comment on exact sections of the plan, ask for revisions, and then choose where the implementation runs."
+
+**Important constraints:** ultraplan is in research preview, and it requires Claude Code on the web plus a GitHub repository.
+
 ---
 
 ### Architecture Decision Records (3 min)
