@@ -113,7 +113,7 @@ Claude відповість оглядом своїх можливостей. З
 Перейдіть до репозиторію курсового проєкту на GitHub:
 
 ```text
-https://github.com/exitStatus0/ai-coderrank
+https://github.com/expecto-mentorum/ai-coderrank
 ```
 
 **Зробіть форк репозиторію** через інтерфейс GitHub (натисніть кнопку "Fork" у верхньому правому куті).
